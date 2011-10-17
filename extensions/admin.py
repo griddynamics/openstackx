@@ -144,7 +144,7 @@ class OverrideHelper(create_instance_helper.CreateInstanceHelper):
 
         image_href = self.controller._image_ref_from_req_data(body)
         try:
-            image_service, image_id = nova.image.get_image_service(image_href)
+            image_service, image_id = nova.image.get_image_service(context, image_href)
             kernel_id, ramdisk_id = self._get_kernel_ramdisk_from_image(req,
                                                                         image_service,
                                                                         image_id)
