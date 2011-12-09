@@ -4,6 +4,7 @@
 #%define mod_name openstack-openstackx
 
 Name:           openstackx
+Epoch:          1
 Release:	3
 Version:	2011.3
 Url:            http://github.com/cloudbuilders/openstackx/
